@@ -6,12 +6,23 @@ namespace ExemploPOO
   {
     static void Main(string[] args)
     {
-      Aluno p1 = new Aluno();
-      p1.Nome = "Bob";
-      p1.Idade = 20;
-      p1.Nota = 10;
-      p1.Documento = "123456789";
-      p1.Apresentar();
+      Calculadora calc = new Calculadora();
+      System.Console.WriteLine("Resultado da primeira soma " + calc.Somar(15, 15));
+      System.Console.WriteLine("Resultado da primeira soma " + calc.Somar(15, 15, 15));
+
+      // Professor p1 = new Professor();
+      // p1.Nome = "Bob";
+      // p1.Idade = 20;
+      // p1.Salario = 3500;
+      // p1.Documento = "123456789";
+      // p1.Apresentar();
+
+      // Aluno p2 = new Aluno();
+      // p2.Nome = "André";
+      // p2.Idade = 20;
+      // p2.Nota = 10;
+      // p2.Documento = "123456789";
+      // p2.Apresentar();
 
       // //Valores válido
       // Retangulo r = new Retangulo();
