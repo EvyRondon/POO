@@ -6,9 +6,15 @@ namespace ExemploPOO
   {
     static void Main(string[] args)
     {
-      Calculadora calc = new Calculadora();
-      System.Console.WriteLine("Resultado da primeira soma " + calc.Somar(15, 15));
-      System.Console.WriteLine("Resultado da primeira soma " + calc.Somar(15, 15, 15));
+      Computador comp = new Computador();
+      System.Console.WriteLine(comp.ToString());
+
+      // Conta c1 = new Corrente();
+      // c1.Creditar(100);
+      // c1.ExibirSaldo();
+      // Calculadora calc = new Calculadora();
+      // System.Console.WriteLine("Resultado da primeira soma " + calc.Somar(15, 15));
+      // System.Console.WriteLine("Resultado da primeira soma " + calc.Somar(15, 15, 15));
 
       // Professor p1 = new Professor();
       // p1.Nome = "Bob";
