@@ -1,4 +1,5 @@
-﻿using ExemploPOO.Models;
+﻿using ExemploPOO.Interfaces;
+using ExemploPOO.Models;
 
 namespace ExemploPOO
 {
@@ -6,12 +7,16 @@ namespace ExemploPOO
   {
     static void Main(string[] args)
     {
-      Computador comp = new Computador();
-      System.Console.WriteLine(comp.ToString());
+      ICalculadora calc = new Calculadora();
+      System.Console.WriteLine("Resultado da divisão " + calc.Dividir(15, 15));
+
+      // Computador comp = new Computador();
+      // System.Console.WriteLine(comp.ToString());
 
       // Conta c1 = new Corrente();
       // c1.Creditar(100);
       // c1.ExibirSaldo();
+
       // Calculadora calc = new Calculadora();
       // System.Console.WriteLine("Resultado da primeira soma " + calc.Somar(15, 15));
       // System.Console.WriteLine("Resultado da primeira soma " + calc.Somar(15, 15, 15));
