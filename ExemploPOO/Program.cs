@@ -1,4 +1,7 @@
-﻿using ExemploPOO.Interfaces;
+﻿using System.Collections.Generic;
+using System.IO;
+using ExemploPOO.Helper;
+using ExemploPOO.Interfaces;
 using ExemploPOO.Models;
 
 namespace ExemploPOO
@@ -7,8 +10,33 @@ namespace ExemploPOO
   {
     static void Main(string[] args)
     {
-      ICalculadora calc = new Calculadora();
-      System.Console.WriteLine("Resultado da divisão " + calc.Dividir(15, 15));
+      var caminho = "C:\\TrabalhandoComArquivos";
+      var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste 1");
+      var caminhoArquivo = Path.Combine(caminho, "arquivo-teste-stream.txt");
+      var caminhoArquivoTeste = Path.Combine(caminho, "arquivo-teste.txt");
+      var caminhoArquivoTesteCopia = Path.Combine(caminho, "arquivo-teste-bkp.txt");
+      var novoCaminhoArquivo = Path.Combine(caminho, "Pasta Teste 2", "arquivo-teste-stream.txt");
+      var listaString = new List<string>() { "Linha 1", "Linha 2", "Linha 3" };
+      var listaString2 = new List<string>() { "Linha 4", "Linha 5", "Linha 6" };
+
+      FileHelper fh = new FileHelper();
+      // fh.ListarDiretorios(caminho);
+
+      // System.Console.WriteLine($"Criando diretório: {caminhoPathCombine}");
+      // fh.ListarArquivosDiretorios(caminho);
+      // fh.CriarDiretorio(caminhoPathCombine);
+      // fh.ApagarDiretorio(caminhoPathCombine, true);
+      // fh.CriarArquivoTexto(caminhoArquivo, "Evelym é linda, e a Elisa é filha dela!!!");
+      // fh.CriarAquivoStream(caminhoArquivo, listaString);
+      // fh.AdicionarTexto(caminhoArquivo, "Euzinha");
+      // fh.AdicionarTextoStream(caminhoArquivo, listaString2);
+      // fh.LerArquivoStream(caminhoArquivo);
+      // fh.MoverArquivo(caminhoArquivo, novoCaminhoArquivo, false);
+      // fh.CopiarArquivo(caminhoArquivoTeste, caminhoArquivoTesteCopia, false);
+      // fh.DeletarArquivo(caminhoArquivoTesteCopia);
+
+      // ICalculadora calc = new Calculadora();
+      // System.Console.WriteLine("Resultado da divisão " + calc.Dividir(15, 15));
 
       // Computador comp = new Computador();
       // System.Console.WriteLine(comp.ToString());
